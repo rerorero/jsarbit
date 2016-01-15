@@ -51,7 +51,7 @@ describe('example', function() {
 * `gen.array(element: Arbitrary or any value, sizeMax: number)`
   - Generator of array.
   - Example:
-  
+
     ```
     var dogOrCatArray = gen.array(choose('dog', 'cat'), 10);
     var someOfPizza = gen.array('pizza', 1, 10);
@@ -163,14 +163,6 @@ function to generate with Arbitrary.
       assert(num >= 0 && num <= 50);
     });
     ```
-
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
 
 
 ## License
