@@ -74,19 +74,19 @@ describe('example', function() {
 
     ```
     var arb = gen.obj({
-      name: gen.oneOf("Alice", "Bob"),
-      address: {
-        country: "Japan",      // No Arbitrary property
-        zip: gen.numericStr(3)
+      "name": gen.oneOf("Alice", "Bob"),
+      "address": {
+        "country": "Japan",      // Not Arbitrary property
+        "zip": gen.numericStr(3)
       },
     });
 
     var sample = arb.sample();
     /* {
-      name: "Alice",
-      address: {
-        country: "Japan"    // as it is.
-        zip: "491"
+      "name": "Alice",
+      "address": {
+        "country": "Japan",    // as it is.
+        "zip": "491"
       }
     } */
     ```
